@@ -28,15 +28,15 @@
         <form action="">
             <label for="name">
                 <span class="descricao-input">Nome</span>
-                <input class="input" type="text" name="name" id="name">
+                <input class="input" type="text" name="name" id="name" required>
             </label>
             <label for="email">
                 <span class="descricao-input">E-mail</span>
-                <input class="input" type="email" name="email" id="email">
+                <input class="input" type="email" name="email" id="email" required>
             </label>
             <label for="password">
                 <span class="descricao-input">Senha</span>
-                <input class="input" type="password" name="password" id="password">
+                <input class="input" type="password" name="password" id="password" minlength="8" maxlength="20" required>
             </label>
 
             <input class="input" type="submit" value="Enviar" id="submit">
