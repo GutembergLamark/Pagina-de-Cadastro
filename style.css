@@ -11,19 +11,17 @@ body {
     background: #1B2029;
     color: white;
     font-weight: 500;
-    display: flex;
-    min-height: 100vh;
-    min-width: 80vh;
 }
 
 main {
-    width: 50vw;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 680px;
-    min-height: 60vh;
+    max-width: 700px;
+    margin: 5px 0;
+    float: left;
 }
 
 main h1 {
@@ -95,44 +93,60 @@ main form label {
 }
 
 .images {
+    float: left;
+    width: 250px;
+    margin-top: 15%;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
     display: flex;
-    align-items: flex-end;
-    padding: 60px 60px 30px 230px;
-    max-width: 350px;
-    min-height: 30vh;
+    flex-direction: column;
+}
+
+#img-1 {
+    margin-top: 5%;
+    margin-right: 5px;
+}
+
+#img-2 {
+    margin-top: 24%
 }
 
 .images img {
-    width: 250px;
     border-radius: 50%;
-    max-width: 1400px;
-    min-height: 10vh;
 }
 
-.imagens {
-    display: flex;
-    align-items: flex-end;
-    padding: 100px 70px 230px 70px;
-    max-width: 350px;
-    min-height: 30vh;
+@media (max-width: 1206px) {
+    .images {
+        width: calc(250px - 80px);
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
 }
 
-.imagens img {
-    width: 250px;
-    border-radius: 50%;
-    max-width: 1400px;
-    min-height: 10vh;
+@media (max-width: 1085px) {
+    .images {
+        width: calc(250px - 120px);
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+    #img-1 {
+        margin-right: 20px;
+    }
 }
 
-.images .circle {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(45deg, #e8cbc0, #636fa4);
-    clip-path: circle(38% at right 100%);
-    z-index: -1;
-    max-width: 1400px;
-    min-height: 80vh;
+@media (max-width: 997px) {
+    .images {
+        width: calc(250px - 120px);
+        float: left;
+        margin-top: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media (max-width: 734px) {
+    .images {
+        float: left;
+        margin-top: 20px;
+        margin-left: 285px;
+    }
 }
