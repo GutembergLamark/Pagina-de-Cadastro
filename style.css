@@ -145,8 +145,21 @@ main form label {
 
 @media (max-width: 734px) {
     .images {
-        float: left;
         margin-top: 20px;
         margin-left: 285px;
+    }
+}
+
+@media (max-width: 670px) {
+    #img-2 {
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    #img-2 {
+        margin-top: 20px;
+        margin-left: 30px;
     }
 }
